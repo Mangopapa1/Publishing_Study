@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button</title>
+    <link rel="stylesheet" href="button.css">
+</head>
+<body>
+   <form>
+       <fieldset class="fav-class">
+           <legend>좋아하는 과목을 고르세요 (택1)</legend>
+           <input type="radio" id="html" name="favorite">
+           <label for="html">HTML</label>
+           <input type="radio" id="css" name="favorite">
+           <label for="css">CSS</label>
+           <input type="radio" id="js" name="favorite">
+           <label for="js">JS</label>
+       </fieldset>
+       <fieldset class="study-class">
+           <legend>스터디할 과목을 고르세요 (다중선택 가능)</legend>
+           <input type="checkbox" id="study-html" name="study">
+           <label for="study-html">HTML</label>
+           <input type="checkbox" id="study-css" name="study">
+           <label for="study-css">CSS</label>
+           <input type="checkbox" id="study-js" name="study">
+           <label for="study-js">JS</label>
+           <input type="checkbox" id="study-node" name="study">
+           <label for="study-node">NODE</label>
+           <input type="checkbox" id="study-react" name="study">
+           <label for="study-react">React</label>
+       </fieldset>
+       <fieldset class="file">
+           <legend>신분증을 첨부해주세요</legend>
+           <label for="idcard">이미지 업로드</label>
+           <input type="file" id="idcard" name="id">
+       </fieldset>
+   </form>
+</body>
+</html>
