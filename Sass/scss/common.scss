@@ -1,7 +1,31 @@
 @charset "utf-8";
 
-@import 'reset','target';
+
+@import 'variables','reset','target'; 
+ 
 
 body {
-    font-family:sans-serif;
+    font-family:sans-serif;   
+    background:url($url + 'spiderman.jpg') no-repeat fixed top right/cover;
+}   
+
+.btnBack {
+    font-size: 20px;
+    background-color: coral;
+}
+
+.space {
+    flex-grow: 1;
+    background-color: red;
+    height: 30px;
+}
+
+.title {
+    padding: 0 10px;
+    font-weight: 600;
+}
+
+.btnOption {
+    font-size: 30px;
+    background-color: olive;
 }

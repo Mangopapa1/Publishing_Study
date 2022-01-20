@@ -1,52 +1,59 @@
-@charset "utf-8"
+@charset "utf-8"; 
+// 볼드체 인 프로퍼티를 일반굵기로 리셋
 
-body,h1,h2,h3,h4,h5,h6,p,dl,dt,dd,ul,ol,li,blockquote,fieldset {margin: 0;padding: 0;}
+/* 
+    원래 css 주석문
+*/ 
 
-a {text-decoration: none;color: inherit;}
+body, h1,h2,h3,h4,h5,h6, p, dl, dt,dd,ul,ol,li,
+blockquote, fieldset
+{ margin:0; padding:0; }
 
-mark {
-    background-color: transparent; color: inherit;
-}
+a { text-decoration:none;color:inherit;}
+mark { background-color:transparent; color:inherit;}
 
 h1,h2,h3,h4,h5,h6 {
-    font-size: inherit;
+    font-size:inherit;
 }
 
 h1,h2,h3,h4,h5,h6,strong,b,th {
-    font-weight: inherit;
+    font-weight:inherit;
 }
 
 ul,ol,li {
-    list-style: none;
+    list-style:none;
 }
 
 i, em, address {
-    font-style: inherit;
+    font-style:inherit;
 }
 
 table {
-    border-spacing: 0;
-    border-collapse: collapse;
+    border-spacing:0;
+    border-collapse:collapse;
 }
 
 th, td {
-    border: 1px solid red;
+    border:1px solid red;
 }
 
 fieldset {
-    border: none;
+    border:none; /* border:0 */
+    /* border: width style color */ 
 }
 
 input[type="text"]::placeholder {
-    color: olive;
-    font-style: italic;
+    color:olive;
+    font-style:italic;
 }
-input[type="text"]:focus {
-    background-color: olive;
-    color: #fff;
-}
-input[type="search"] {
 
+input[type="text"]:focus {
+    background-color:olive;
+    color:#fff;
+}
+
+input[type="search"] {
+    
 }
 
 input[type="checkbox"] {
@@ -57,15 +64,15 @@ input[type="radio"] {
 
 }
 
-caption {
-    // caption-side:bottom
-}
-
 button {
-    cursor: pointer;
+    cursor:pointer;
 }
 
-.blind {
+caption {
+    // caption-side: bottom;
+}
+
+.blind, hr, legend {
     position: absolute;
     clip: rect(0 0 0 0);
     width: 1px;
@@ -74,6 +81,8 @@ button {
     overflow: hidden;
 }
 
-q:before, q:after {
-    content: '';
+
+q:before, 
+q:after {
+    content:'';
 }
