@@ -52,20 +52,22 @@ input[type="text"]:focus {
     color:#fff;
 }
 
-// input[type="search"] {
+input[type="search"] {
     
-// }
+}
 
-// input[type="checkbox"] {
+input[type="checkbox"] {
 
-// }
+}
 
-// input[type="radio"] {
+input[type="radio"] {
 
-// }
+}
 
 button {
     cursor:pointer;
+    border:none;
+    background-color:transparent;
 }
 
 caption {
