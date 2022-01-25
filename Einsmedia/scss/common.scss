@@ -199,5 +199,29 @@ body {
     }
 } 
 
+.dimm{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(#000000,0.7);
+    z-index: 100;
+}
 
+@mixin modal($w, $h, $bg) {
+    width: #{$w} + px;
+    height: #{$h} + px;
+    background-color: $bg;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
 
+.modal {
+    z-index: 101;
+    // display:none;
+    @include border(20);
+    @include modal(50%,400,#fff)
+}

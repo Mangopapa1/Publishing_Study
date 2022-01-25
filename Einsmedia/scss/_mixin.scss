@@ -20,3 +20,23 @@
 @mixin ir($img,$size) {
     //a tag ir
 }
+
+@function unitCheck($x) { 
+    // 단위체크
+    @if(type-of($x)==number) {
+        @if(unitless($x)) {
+            @return $x+px;
+        }
+    }
+
+    @return $x;
+}
+
+@mixin border($r) {
+        $r:unitCheck($r);
+        border-radius: $r;
+    }
+    
+    // @mixin border($r) {
+    //     border-radius: #{$r}px;
+    // }
