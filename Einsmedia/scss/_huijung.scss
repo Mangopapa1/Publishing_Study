@@ -12,16 +12,22 @@
       }
     }
 
+    figure {
+      text-align: center;
+      img {
+        // max-height: 440px;
+        width: 100%;
+      }
+    }
+
     figcaption {
       max-width: 800px;
       font-size: 18px;
-      color: #fff;
-      margin: 0 auto;
+      margin: 40px auto 0;
       padding: 12px 70px;
       background: rgba(255,255,255,.1);
-      border-radius: 35px;
+      @include radius(35);
       text-align: center;
-      margin-top: 40px;
     }
 
     strong {

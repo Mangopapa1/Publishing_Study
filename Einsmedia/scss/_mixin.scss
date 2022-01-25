@@ -28,7 +28,7 @@
     @return $x;
 }
 
-@mixin border($r) { 
+@mixin radius($r) { 
     $r:unitCheck($r);
     -ms-border-radius:$r;
     -webkit-border-radius:$r;

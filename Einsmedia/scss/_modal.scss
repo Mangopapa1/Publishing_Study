@@ -13,7 +13,7 @@
  
 .modal { 
     z-index:101;
-    @include border(20);  
+    @include radius(20);  
     @include modal(50%,400,#fff); 
     display:none; 
 }
