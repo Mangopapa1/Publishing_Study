@@ -5,41 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Einsmedia</title>
+    <link rel="stylesheet" href="./lib/jquery.fullpage.css">
     <link rel="stylesheet" href="./css/common.css">
     <script src="./lib/jquery-1.11.2.js"></script>
-    <script>
-        $(function() {
-            const $btnHam = $('.btnHam');
-            const $dimm = $('.dimm');
-            const $modal = $('.modal');
-            const $modal2 = $('.modal2');
-            const $header = $('.pageHeader');
-            const $btnClose = $('.btnClose');
-
-            $btnHam.click(function() {   
-                // $dimm.fadeIn(100);
-                // $modal.fadeIn(100);
-                // $modal2.animate({
-                //     bottom : 0
-                // }, 500);
-                $header.addClass('full');
-                $btnClose.show();
-            })
-
-            $btnClose.click(function() {
-                $header.removeClass('full');
-                $(this).hide();
-            })
-
-            $dimm.click(function() {
-                $(this).hide();
-                // $modal.hide();
-                $modal2.animate({
-                    bottom: '-70vh'
-                }, 100);
-            })
-        }) 
-    </script>
+    <script src="./lib/jquery-ui.min.js"></script>
+    <script src="./lib/jquery.fullpage.js"></script>
+    <script src="./js/common.js"></script>
+    
 </head>
 <body>  
     <header class="pageHeader">
@@ -70,7 +42,9 @@
             <button type="button" class="btnClose">X</button>
         </nav> 
     </header>
-    <section class="area visual">
+
+    <div id="fullpage">
+    <section class="section area visual">
         <div class="inner">
             <h2>
                 More than advertising<br>
@@ -85,7 +59,7 @@
             <li><a href="#" class="material-icons">favorite</a></li>
         </ul>
     </section>
-    <section class="area solution">
+    <section class="section area solution">
         <div class="inner">
             <header>
                 <h2>
@@ -167,7 +141,7 @@
 
 
     <!-- 세원, 미진 -->
-    <section class="area marketing">
+    <section class="section area marketing">
         <div class="inner">
             <header>
                 <h2>
@@ -246,7 +220,7 @@
     </section>
 
     <!-- 순상 -->
-    <section class="area d">
+    <section class="section area d">
         <div class="inner">
             <header>
                 <h2>
@@ -305,7 +279,7 @@
     </section> 
 
     <!-- 시찬 -->
-    <section class="area e">
+    <section class="section area e">
         <div class="inner">
             <header>
                 <h2>
@@ -344,10 +318,8 @@
     </section>
     
 
-
-
     <!-- 희정 -->
-    <section class="area f">
+    <section class="section area f">
         <div class="inner">
             <header>
                 <h2>
@@ -367,7 +339,7 @@
     </section> 
 
     <!-- Contact us -->
-    <section class="area g">
+    <section class="section area g">
         <div class="inner">
             <header>
                 <h2>
@@ -445,7 +417,7 @@
     </section> 
 
     <!-- 정배 -->
-    <footer class="pageFooter">
+    <footer class="section fp-auto-height pageFooter">
         <div class="inner"> 
             <nav>
                 <ul>
@@ -475,6 +447,7 @@
             </p>
         </div>
       </footer>
+    </div>
     
 
     <div class="dimm"></div>
